@@ -9,9 +9,8 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-  // Deploy branch only. Uncomment so the build is served from
-  // mmalabugin.ru/IntroSectionWithDropdownNavigation/ (Jenkins → nginx).
-  // On main this stays commented: Vercel serves the site from /.
-  // Keep the same path uncommented in react-router.config.ts (basename).
-  // base: "/IntroSectionWithDropdownNavigation/",
+  // Deploy branch: assets are served from mmalabugin.ru/IntroSectionWithDropdownNavigation/.
+  // On main this line stays commented so Vercel serves the site from /.
+  // Keep basename in react-router.config.ts in the same state (no trailing slash there).
+  base: "/IntroSectionWithDropdownNavigation/",
 });
