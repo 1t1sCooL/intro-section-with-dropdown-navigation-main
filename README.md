@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Vercel](https://intro-section-with-dropdown-navigation-main.vercel.app/)
+- Solution URL: [Vercel](https://intro-section-with-dropdown-navigat-lyart.vercel.app/)
 - Live Site URL: [mmalabugin.ru/IntroSectionWithDropdownNavigation](https://mmalabugin.ru/IntroSectionWithDropdownNavigation/)
 
 ## My process
