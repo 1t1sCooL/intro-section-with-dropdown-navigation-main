@@ -1,0 +1,15 @@
+node_modules
+build
+dist
+.git
+.vercel
+.react-router
+design
+screenshot-desktop.png
+screenshot-mobile.png
+README.md
+AGENTS.md
+CLAUDE.md
+coverage
+*.log
+*.tsbuildinfo

@@ -1,0 +1,208 @@
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-block-start: 3.9rem;
+  padding-inline: 10.3125rem 8.125rem;
+}
+
+.hero__copy {
+  flex: 1 1 auto;
+  min-width: 0;
+  max-width: 36rem;
+  margin-block-start: 6.625rem;
+}
+
+.hero__title {
+  max-width: 33rem;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.02em;
+}
+
+.hero__line {
+  white-space: nowrap;
+}
+
+.hero__text {
+  max-width: 28.25rem;
+  margin-block-start: 3.15rem;
+  color: var(--gray-500);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.56;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 10.1875rem;
+  min-height: 3.5rem;
+  margin-block-start: 3.2rem;
+  padding: 0.85rem 1.6rem;
+  border: 0.09375rem solid var(--gray-950);
+  border-radius: 0.875rem;
+  background: var(--gray-950);
+  color: var(--gray-50);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.clients {
+  display: flex;
+  align-items: center;
+  gap: 2.55rem;
+  margin-block-start: 6.8rem;
+}
+
+.client--databiz {
+  width: 7.125rem;
+}
+
+.client--audiophile {
+  width: 4.5625rem;
+}
+
+.client--meet {
+  width: 5.625rem;
+}
+
+.client--maker {
+  width: 5.1875rem;
+}
+
+.hero__picture {
+  flex: 0 0 30rem;
+  width: 30rem;
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .cta {
+    transition:
+      color 0.15s ease,
+      background-color 0.15s ease;
+  }
+}
+
+.cta:hover {
+  background: transparent;
+  color: var(--gray-950);
+}
+
+@media (max-width: 79.9375em) {
+  .hero {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    margin-block-start: 0;
+    padding-inline: 0;
+    text-align: center;
+  }
+
+  .hero__picture {
+    flex-basis: auto;
+    width: 100%;
+    order: -1;
+  }
+
+  .hero__copy {
+    max-width: none;
+    margin-block-start: 0;
+    padding: 3.15rem 1rem 0;
+  }
+
+  .hero__title {
+    max-width: none;
+    font-size: 2.25rem;
+    line-height: 1.15;
+    letter-spacing: -0.015em;
+  }
+
+  .hero__break {
+    display: none;
+  }
+
+  .hero__line {
+    white-space: normal;
+  }
+
+  .hero__text {
+    max-width: 21.5rem;
+    margin-inline: auto;
+    margin-block-start: 1.05rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .cta {
+    width: 8.5rem;
+    min-width: 0;
+    min-height: 3rem;
+    margin-block-start: 1.45rem;
+    padding-inline: 0.75rem;
+  }
+
+  .clients {
+    justify-content: center;
+    gap: 1.85rem;
+    width: min(100%, 22.5rem);
+    margin-inline: auto;
+    margin-block-start: 3rem;
+    padding-block-end: 2.5rem;
+  }
+
+  .client--databiz {
+    width: 5.0625rem;
+  }
+
+  .client--audiophile {
+    width: 3.1875rem;
+  }
+
+  .client--meet {
+    width: 3.9375rem;
+  }
+
+  .client--maker {
+    width: 3.6875rem;
+  }
+}
+
+@media (max-width: 22.5em) {
+  .hero__title {
+    font-size: 1.85rem;
+  }
+
+  .hero__text {
+    font-size: 0.9375rem;
+  }
+
+  .clients {
+    gap: 0.85rem;
+  }
+
+  .client--databiz {
+    width: 4.1rem;
+  }
+
+  .client--audiophile {
+    width: 2.6rem;
+  }
+
+  .client--meet {
+    width: 3.2rem;
+  }
+
+  .client--maker {
+    width: 3rem;
+  }
+}
