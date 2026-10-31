@@ -74,7 +74,7 @@ npm run test      # vitest
 npm run build     # react-router build → build/client
 ```
 
-Deploy convention: `main` targets **Vercel** (the `base` / `basename` lines stay commented, so the site is served from `/`). The `deploy` branch uncomments `base: '/IntroSectionWithDropdownNavigation/'` in `vite.config.ts` and `basename: '/IntroSectionWithDropdownNavigation'` in `react-router.config.ts`. Jenkins builds that branch into an nginx image and Kubernetes serves it at `mmalabugin.ru/IntroSectionWithDropdownNavigation/`.
+Deploy convention: `main` targets **Vercel** (the `base` / `basename` lines stay commented, so the site is served from `/`). The `deploy` branch uncomments `base` and `basename`, both set to `/IntroSectionWithDropdownNavigation/` (the same string, trailing slash included, so Vite joins asset URLs and React Router accepts the dev server). Jenkins builds that branch into an nginx image and Kubernetes serves it at `mmalabugin.ru/IntroSectionWithDropdownNavigation/`.
 
 ## Author
 

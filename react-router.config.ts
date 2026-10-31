@@ -3,8 +3,8 @@ import type { Config } from "@react-router/dev/config";
 export default {
   ssr: false,
   prerender: ["/"],
-  // Deploy branch. No trailing slash — React Router adds it.
-  // Vite `base` in vite.config.ts is the same path WITH a trailing slash.
+  // Deploy branch. Identical to Vite `base`, including the trailing slash,
+  // so the dev-server check `basename.startsWith(base)` passes.
   // On main this line stays commented.
-  basename: "/IntroSectionWithDropdownNavigation",
+  basename: "/IntroSectionWithDropdownNavigation/",
 } satisfies Config;
